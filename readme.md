@@ -14,6 +14,7 @@ CREATE TABLE users (
     email VARCHAR(50) NOT NULL,
     password VARCHAR(255) NOT NULL
 );
+```
 
 ### Configuration File (config.php)
 Source Code untuk Menyambungkan ke Database
@@ -34,6 +35,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 ?>
+```
 
 ### Registrati (register.php)
 
@@ -91,6 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <?php echo $error; ?>
 </body>
 </html>
+```
 
 ### Login (login.php)
 
@@ -144,3 +147,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <?php echo $error; ?>
 </body>
 </html>
+```
+
+### Penjelasan Untuk Source Code
+1. **Database** untuk menyimpan users yang telah registrasi di form Regristrasi
+2. **Config.php** untuk menyambungkan ke databse
+3. **login.php** untuk login menggunakan akun yang telah dibuat di form regristrasi
+4. **register.php** untuk membuat akun
