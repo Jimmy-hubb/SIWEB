@@ -30,7 +30,10 @@ if (!isset($_SESSION['user'])) {
     </a>
 
     <nav id="navmenu" class="navmenu">
+      
       <ul>
+      <li class="username" style="font-family: 'Poppins', sans-serif; color: white; font-size: 25px; font-weight: bold;">
+      <?php echo $_SESSION['user']; ?>
         <li><a href="#hero" class="active">Home<br></a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
@@ -42,15 +45,13 @@ if (!isset($_SESSION['user'])) {
             <li><a href="#">Dropdown 1</a></li>
             <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
+            <li><a href="#">-</a></li>
+            <li><a href="#">-</a></li>
+            <li><a href="#">-</a></li>
           </ul>
         </li>
         <li><a href="#contact">Contact</a></li>
-        <!-- Tambahkan class CSS untuk styling -->
-        <li class="username" style="font-family: 'Poppins', sans-serif; color: white; font-size: 16px; font-weight: bold;">
-          <?php echo $_SESSION['user']; ?>
+          <li><a href="login.php">Log Out</a></li>
         </li>
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
